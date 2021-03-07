@@ -1,0 +1,231 @@
+.post-formg{width: 400px;margin-top: 20px;
+}
+.post-form-txg{width: 340px;max-width: 320px;min-width: 320px;}
+form textarea {
+    width: 400px;
+    background-color: white;
+    color: #eff1fb;
+}
+
+h1{   font-size: 18px;}
+.pt_mn_2434546454545454 h1{
+    width:80%;
+}
+.poster{
+    margin-bottom:15px;
+}
+.post{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.wr-gp button{
+    border-radius: 30px;
+}
+
+#content button{
+    border-radius: 30px;
+}
+#vidgp .feed {
+    margin: 35px 0;
+
+}
+textarea {
+    font-family:Times;
+}
+.queue-button{
+    width: 660px;
+}
+#vidgp{
+    display: grid;
+}
+
+.wrappers{
+     padding-top: 60px;
+     width: 700px;
+}
+.wrappers{width: 65vh;}
+#txtau, #txtaus{
+    background-color: var(--color-it-root);
+    color: #eff1fb;
+    width: 60vh;
+    height: 18px;
+    max-width: 60vh;
+    margin: 30px 0;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: inset rgb(3 3 5 / 33%) -1px 6px 20px 2px, rgb(43 43 43 / 30%) 0px 1px 0px 0px;
+}
+.post_ {
+    width: 180px;
+}
+.wr-gp h1{
+    padding: 30px;
+}
+.wr-gp .post-item{
+    box-shadow: inset rgb(0 0 0 / 41%) -1px 6px 20px 2px, rgb(108 104 137 / 7%) 0px 1px 0px 0px;
+    width: 250px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+  
+    border-radius: 20px;
+
+}
+.wr-gp{
+    overflow: auto;
+    max-width: 400px;
+    /* position: absolute; */
+    background: var(--color-it-root);
+    margin-top: 100px;
+    height:80vh;
+    border-radius: 30px;
+    box-shadow: inset rgb(2 2 4 / 33%) -1px 6px 20px 2px, rgb(121 119 134 / 30%) 0px 1px 0px 0px;
+    
+}
+.avatar{width: 90%;
+margin-top: 50px;
+border-radius: 10px;
+margin-bottom: 40px;}
+.post-item {
+    box-shadow: none;
+}#line_block { 
+    width: 135px;
+    height: 87px;
+    background: #21222a;
+    float: left;
+    margin: 0 13px 17px 25px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: rgb(12 12 15 / 62%) -2px 0px 18px 2px, rgb(163 169 174 / 30%) 0px 1px 2px 0px;
+    }
+    #group-form-button{
+        margin-top: 80px;
+    }
+    #chat_window_room{
+        overflow: auto;
+        padding:10px;
+    }
+.post_com_v{box-shadow: none;
+    width: 60%;
+    min-height: 200px;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient(45deg, #1a1b20, #23252b);
+    box-shadow: 9px -9px 18px #141519, -9px 9px 18px #26272e;
+}
+  .avatar_coms_p4564747574{
+      border-radius: 50%;
+        width: 40px;}
+       
+ button{background-color: rgb(130, 152, 233);color:white;}
+ .img_src_user{
+    width:550px;
+}
+h1, span{
+   color: rgb(149 149 149);
+}
+
+.m-item879798798_v1{
+    background-color:white;
+    margin-bottom:20px;
+    border-radius:10px;
+    padding:10px;
+    width:250px;
+ }
+ .post_mn46747_t56876876799 { 
+    margin-left:200px;
+    background-color:#8298e9;
+    color: white;
+}
+.post_mn46747_t56876876799 span { 
+    color: white;
+}
+.ms_t343436890809{
+    width: 100%;
+    min-width: 470px;
+padding: 0;
+margin-bottom: 30px;
+height: 50px;
+background-color: white;
+margin-top: 25px;
+}
+.ms_t343436890809 span{
+    color:#8198e9;
+}
+.post-form{
+    display: contents;
+bottom: 0;
+width: 470px;
+background-color:white;
+}
+form textarea{
+    width: 400px;
+    background-color: var(--color-it-root);
+    color: #eff1fb;
+}
+.im_m23289305521{
+    width: 40px;
+border-radius: 50%;
+margin-left: 30px;
+margin-top: 5px;
+}
+.ava_mess_v3{
+    
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.ms_t34343689080{
+    display:none;
+}
+.queue-button{
+    width: 63vh;
+}
+.wr-gp .queue-button{
+    width: 20vh;
+    margin-top: 30px;
+}
+
+.container{
+    min-width: 700px;
+    width: 700px;
+    max-width: 800px;
+}
+#content{
+    width: 65vh!important;
+    min-width: 65vh!important;
+}
+input[type=file] {
+    cursor: pointer;
+    width: 180px;
+    height: 34px;
+    overflow: hidden;
+  }
+  
+  input[type=file]:before {
+    width: 158px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+    content: '#';
+    display: inline-block;
+    background: white;
+    border: 1px solid #000;
+    padding: 0 10px;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .imgstgp{
+      min-width: 120px ;
+  }
+  .imgstgp :last-child{
+width: 100%;
+background-color: red;
+  }

@@ -1,0 +1,31 @@
+avatar := "avatar.png"
+	var u User
+	email = strings.TrimSpace(email)
+	if !rxEmail.MatchString(email) {
+		return ErrInvalidEmail
+	}
+	tx, err := s.db.BeginTx(ctx, nil)
+	if err != nil {
+		return fmt.Errorf("could not insert user: %v", err)
+	}
+	defer tx.Rollback()
+	username = strings.TrimSpace(username)
+	if !rxUsername.MatchString(username) {
+		return ErrInvalidUsername
+	}
+	query := "INSERT INTO users (email, username) VALUES ($1, $2) RETURNING id"
+	if err = tx.QueryRowContext(ctx, query, email, username).Scan(&u.ID); err != nil {
+		return fmt.Errorf("could not insert user: %v", err)
+	}
+	query = "INSERT INTO avatar (user_id, name) VALUES ($1, $2) "
+	_, err = s.db.ExecContext(ctx, query, &u.ID, avatar)
+	unique := isUniqueViolation(err)
+
+	if unique && strings.Contains(err.Error(), "email") {
+		return ErrEmailTaken
+	}
+	if err != nil {
+		return fmt.Errorf("could not insert user: %v", err)
+	}
+
+	return nil

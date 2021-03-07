@@ -1,0 +1,118 @@
+audio{
+    height: 30px;
+}
+.video_chat{
+    background-color: var(--color-bg-root);
+    float: right;
+    margin-top:10px;
+}
+.g_feed678687687{
+    overflow:auto;
+}
+button{
+    background-color: rgb(129 152 233);
+}
+#timeline-list{
+    float: left;
+    padding:0;
+    margin-top: 25px;
+    height: 85vh;
+    overflow: auto;
+   
+}
+.post-item{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 160px;
+    box-shadow: none;
+    background-color: #21222a;
+ 
+}
+.pt76397654_687687{
+float: left;
+margin-left: 20px;
+border-radius: 10px;
+width: 70vh;
+}
+
+.ms_t3434{
+    overflow: auto;
+    height: 74vh;
+   }
+    .g_feed678687687 .load-more-button{
+        bottom: 60px;
+        position: absolute;
+     }
+     .post-form-button{
+        content:"⌲"
+     }
+     
+     .m-item879798798_v1{
+        background-color:var(--color-it-root);
+        margin-bottom:20px;
+        border-radius:10px;
+        padding:10px;
+        width:250px;
+     }
+     .post_mn46747_t56876876799 { 
+        margin-left:300px;
+        background-color:#8298e9;
+        color: white;
+
+    }
+    .post_mn46747_t56876876799 span { 
+        color: white;
+    }
+    .ms_t343436890809{
+        width: 100%;
+        min-width: 470px;
+        padding: 0;
+        margin-bottom: 30px;
+        height: 50px;
+        
+        margin-top: 25px;
+        box-shadow: rgb(6 6 13 / 59%) 0px 6px 18px 2px, rgb(163 169 174 / 30%) 0px 1px 2px 0px;
+    }
+    .ms_t343436890809 span{
+        color:#8198e9;
+    }
+    .container{
+        width: auto;
+    }
+    .post-form{
+position: fixed;
+bottom: 0;
+width: 68vh;
+background-color: var(--color-bg-root);
+    }
+    form textarea{
+        width: 60vh;
+       background-color:#2c2e36;
+        color: #c8cbd8;
+    }
+   .im_m23289305521{
+        width: 40px;
+border-radius: 50%;
+margin-left: 30px;
+margin-top: 5px;
+    }
+   .ava_mess_v3{
+        
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 120px;
+    }
+    .ms_t34343689080{
+        display:none;
+    }
+    .chat_img{
+        width:30px;
+        border-radius: 50%;
+    }
+    #timeline-list  .load-more-button{
+        position: fixed;
+        bottom: 0;
+    }
+   #load-more-button {display: block;
+     position: absolute;
+        bottom: 10px;}

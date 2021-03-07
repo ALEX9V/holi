@@ -1,0 +1,37 @@
+#Capa34{
+    display:none;
+}
+h3{
+    color:#8198e9;
+}
+p{
+    color:silver;
+    display: inline-block;
+}
+#radio{
+    display:content;
+    display: inline-block;
+    height:auto !important;
+}
+input {
+    margin-bottom:20px;
+
+}
+#textareas{
+    width: 80%;
+    height: 300px;
+    padding: 20px;
+}
+#post-form{ margin-top: 30px;}
+#post-form input, textarea {background: #21222a;
+    color: gray;
+    height: 40px;
+    border-radius: 40px;
+    background: linear-gradient(145deg, #1e1f26, #23242d);
+    box-shadow: 9px 9px 18px #18181b, -9px -9px 18px #1f1f26;
+
+}
+
+
+    #svg_pp_mm{ margin: 0 30% 0 25%;}
+    

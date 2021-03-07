@@ -1,0 +1,245 @@
+.amounter h2 {    width: 440px;}
+#chat_window_room .rl-input{  width:50px;}
+.di_v34{ 
+    display: inline-grid;
+    padding:10px;
+    }
+.amounter h2{ color:  var( --color-ft-root);}
+.tags{
+    display: inline-grid;
+}
+.tagi{
+    display: inline-table;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius:20px;
+    box-shadow: rgb(24 24 29 / 92%) 0px 6px 18px 2px, inset rgb(33 34 42) 0px 1px 1px 0px;
+}
+.tagi:hover
+{background:#d0d6db;}
+.amounter{
+    color:var(--color-accent);
+    
+}
+.load-more-button{
+    position: fixed;
+    bottom: 0;
+    
+}
+#tags{display: none;}
+.img_src_user{
+    width:550px;
+}
+.btn_m{
+    width: 200px;
+    height: 100px;
+    background: #ffffff;
+    position: fixed;
+    z-index: 2;
+    float: inherit;
+    margin-left: 470px;
+    margin-top: 40px;
+    display:none;
+}
+.btn_dropdowns_item{
+    border: solid rgb(255, 255, 255);
+    border-width: 0 0 0 3px;
+    width: 100%;
+    color: grey;
+    background: var(--color-it-root);
+}
+.btn_dropdowns_item:hover{
+    border: solid var(--color-accent);
+    border-width: 0 0 0 3px;
+    border-radius: 0;
+}
+.post-itemss{
+
+   height: 30px;
+   display: inline-grid;
+   background-color:#36363c;
+   margin-left: 33px;
+   padding: 3px;
+   border-radius: 50px;
+
+}
+#filter{
+    display: inline-flex;
+    margin-left:40px;
+}
+.btn_drop{margin-left: 550px;
+    background: var(--color-it-root);
+    color: #a6afb8;
+    border-radius: 20px;}
+    .cldropev{margin-left: 200px;
+        background: white;
+        color: #a6afb8;
+        border-radius: 20px;}
+.btn_dropdown{
+    margin-left: 10px;
+    background: var(--color-it-root);
+    color: #a6afb8;
+    border-radius: 20px;
+}
+.btn_lk{
+    color:#f7f9ff;
+    background:none;
+    border-radius: 20px;
+   
+}
+.gp-user-li{
+   width: 40px;
+   height: 10px;
+   border-radius:50%;
+   padding: 10px;
+}
+.tag_div{
+   margin-top: 10px;
+   font-size: 14px;
+   color: white;
+}
+.body_img{
+    width: 100%;
+    border-radius: 10px;
+}
+#tags{
+    overflow: auto;
+    width: 90%;
+    height: 400px;
+    background: var(--color-it-root);
+    box-shadow: inset rgb(0 0 0 / 28%) 0px 6px 18px 2px, rgb(66 69 71 / 30%) 0px 1px 2px 0px;
+    border-radius: 30px;
+    margin-left: 50px;
+}
+.tag_div {
+    margin-top: 10px;
+    font-size: 16px;
+}
+p{    color: var(--color-ft-root);}
+#chat_window_room input{
+    height:auto;
+}
+#Capa34{
+    height: 100px;
+    float: left;
+    width: 150px;
+    fill: var(--color-accent);
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+
+.post-content{
+   padding: 0 20px;
+}
+.likes-count{
+    color:white;
+}
+.dv_p12323243{
+    width: 3px;
+   
+    height: 30px;
+    margin-left: 40px;
+}
+.readmore{
+    background-color:white;
+    color: var(--color-accent);
+}
+.btn_fl{ margin-left: 20px;}
+#more{
+    height: 35px;
+    background: var(--color-accent);
+    border-radius: 50px;
+    font-size: 12px;
+    background: linear-gradient(112deg, rgba(95,0,159,1) 16%, rgba(253,29,199,1) 50%, rgba(0,198,255,1) 100%);
+    background-size: auto;
+background-size: 300% 300%;
+-webkit-animation: AnimationName 8s ease infinite;
+-moz-animation: AnimationName 8s ease infinite;
+-o-animation: AnimationName 8s ease infinite;
+animation: AnimationName 8s ease infinite;
+}
+#tag{
+    display: inline-flex;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#timeline-list{
+    display: inline-flex;
+}
+.user-profile{
+    width:150px;
+    background-color:white;
+    height:60px;
+    display: inline-block;
+    margin-left:5px;
+    margin-top:30px;
+}
+.post_pt_ind{
+    width: 175px;
+    float: left;
+    margin-right: 23px;
+}
+.post_pt_ind2{
+    width: 310px;
+    float: left;
+    margin-right: 23px;
+}
+.post-item{
+    
+    max-height: 245px;
+    padding: 10px;
+    border-radius:15px;
+    position:relative;
+}
+.post-item2{
+    background: #25262b; 
+  
+    padding: 10px;
+    border-radius:15px;
+    position:relative;
+}
+.post-controls{
+    margin-top:30px;
+    position: absolute;
+    bottom: 5px;
+}
+
+#svg_hd_5758{
+    width: 22px;
+    height: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+     
+    }
+    #searcher{
+       
+        margin-top:30px;
+        width:75%;
+        height: 40px;
+        background:     #53535d;
+        color: gray;
+        margin-left: 20px;
+        border-radius: 30px;
+    }
+    #rl-ch-im-lf{
+        margin-left:25%;
+        fill:var(--color-accent);
+    }
+    
+    .container{
+        width: 1090px;
+    }
+    #content {
+        min-width: 1090px;
+        width: 1090px;
+       
+    }
+   #imgtppp{
+        width: 100px;
+        border-radius: 20px;
+        margin-left: 50px;
+        margin-top: 40px;
+    }

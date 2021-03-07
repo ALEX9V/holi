@@ -1,0 +1,45 @@
+.post-item{
+    width: 80%;
+  
+    padding: 10px;
+    border-radius: 1px;
+    position: relative;
+    margin-bottom: 10px;
+   
+
+}
+.img-pp-tt{
+    width: 25px;
+    border-radius: 50%;
+}
+.post-controls{
+    margin-top:30px;
+    position: absolute;
+    bottom: 5px;
+}
+.post-content{
+   padding: 20px;
+}
+.likes-count{
+    color:white;
+}
+.dv_p12323243{
+    width: 4px;
+    background-color: #8198e9;
+    height: 30px;
+    margin-left: 40px;
+}
+.readmore{
+    background-color:white;
+    color: #8198e9;
+}
+
+.img_src_user{
+    width:550px;
+}
+#im-gg-ll{
+    margin-left: 25%;
+}
+.bd-gg-ll{
+    padding: 10px;
+}

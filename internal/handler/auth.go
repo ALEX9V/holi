@@ -1,0 +1,90 @@
+package handler
+
+import (
+	"context"
+	"encoding/json"
+	"fmt"
+	"net/http"
+	"social/internal/service"
+	"strings"
+)
+
+type loginInput struct {
+	Email string
+	Pass  string
+}
+
+func (h *handler) login(w http.ResponseWriter, r *http.Request) {
+	var in loginInput
+	defer r.Body.Close()
+	if err := json.NewDecoder(r.Body).Decode(&in); err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+	fmt.Println(in.Pass)
+	out, err := h.Login(r.Context(), in.Email, in.Pass)
+	if err == service.ErrInvalidEmail {
+		http.Error(w, err.Error(), http.StatusUnprocessableEntity)
+		return
+	}
+	if err == service.ErrUserNoFound {
+		http.Error(w, err.Error(), http.StatusNotFound)
+		return
+	}
+	if err != nil {
+		respondErr(w, err)
+		return
+	}
+	respond(w, out, http.StatusOK)
+}
+func (h *handler) authUser(w http.ResponseWriter, r *http.Request) {
+	u, err := h.AuthUser(r.Context())
+	if err == service.ErrUnauthenticated {
+		http.Error(w, err.Error(), http.StatusUnauthorized)
+		return
+	}
+	if err == service.ErrUserNoFound {
+		http.Error(w, err.Error(), http.StatusNotFound)
+		return
+	}
+	if err != nil {
+		respondErr(w, err)
+		return
+	}
+	respond(w, u, http.StatusOK)
+
+}
+func (h *handler) withAuth(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		a := r.Header.Get("Authorization")
+		if !strings.HasPrefix(a, "Bearer") {
+			next.ServeHTTP(w, r)
+			return
+		}
+		token := a[7:]
+		uid, err := h.AuthUserID(token)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusUnauthorized)
+			return
+		}
+		ctx := r.Context()
+		ctx = context.WithValue(ctx, service.KeyAuthUserID, uid)
+		next.ServeHTTP(w, r.WithContext(ctx))
+	})
+
+}
+
+func (h *handler) token(w http.ResponseWriter, r *http.Request) {
+	out, err := h.Token(r.Context())
+	if err == service.ErrUnauthenticated {
+		http.Error(w, err.Error(), http.StatusUnauthorized)
+		return
+	}
+
+	if err != nil {
+		respondErr(w, err)
+		return
+	}
+
+	respond(w, out, http.StatusOK)
+}

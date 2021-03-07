@@ -1,0 +1,55 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+.pt-dd{
+    margin-left: 70px;
+}
+.pt-dd span{
+    margin-left: 80px;
+}
+.container{
+    width: 900px;
+}
+.post-item{
+    width: 91%;
+    background-color: var(--color-it-root);
+    padding: 10px;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 10px;
+   
+}
+.post-controls{
+    margin-top:30px;
+    position: absolute;
+    bottom: 5px;
+}
+.post-content{
+   padding: 20px;
+}
+.likes-count{
+    color:white;
+}
+.dv_p12323243{
+    width: 4px;
+    background-color: #8198e9;
+    height: 30px;
+    margin-left: 40px;
+}
+.readmore{
+    background-color:white;
+    color: #8198e9;
+}
+.post-header a {margin-left:45px;}
+
+
+
+fieldset, label { margin: 0; padding: 0; }
+
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+

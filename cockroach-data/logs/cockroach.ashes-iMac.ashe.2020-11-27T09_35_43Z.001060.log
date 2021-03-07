@@ -1,0 +1,93 @@
+I201127 09:35:43.968072 1 util/log/sync_buffer.go:70  [config] file created at: 2020/11/27 09:35:43
+I201127 09:35:43.968072 1 util/log/sync_buffer.go:70  [config] running on machine: ashes-iMac
+I201127 09:35:43.968072 1 util/log/sync_buffer.go:70  [config] binary: CockroachDB CCL v20.1.4 (x86_64-apple-darwin14, built 2020/07/29 22:51:52, go1.13.9)
+I201127 09:35:43.968072 1 util/log/sync_buffer.go:70  [config] arguments: [cockroach start --insecure --host 127.0.0.1]
+I201127 09:35:43.968072 1 util/log/sync_buffer.go:70  line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid file:line msg utf8=✓
+I201127 09:35:43.968069 1 cli/start.go:1223  logging to directory /Users/ashe/go/src/social/cockroach-data/logs
+W201127 09:35:43.968655 1 cli/start.go:1272  RUNNING IN INSECURE MODE!
+
+- Your cluster is open for any client that can access 127.0.0.1.
+- Any user, even root, can log in without providing a password.
+- Any user, connecting as root, can read or write any data in your cluster.
+- There is no network encryption nor authentication, and thus no confidentiality.
+
+Check out how to secure your cluster: https://www.cockroachlabs.com/docs/v20.1/secure-a-cluster.html
+W201127 09:35:43.969810 1 cli/start.go:1144  Using the default setting for --cache (128 MiB).
+  A significantly larger value is usually needed for good performance.
+  If you have a dedicated server a reasonable setting is --cache=.25 (3.0 GiB).
+I201127 09:35:43.969852 1 cli/start.go:1286  CockroachDB CCL v20.1.4 (x86_64-apple-darwin14, built 2020/07/29 22:51:52, go1.13.9)
+W201127 09:35:43.970269 1 cli/start.go:548  running 'cockroach start' without --join is deprecated.
+Consider using 'cockroach start-single-node' or 'cockroach init' instead.
+I201127 09:35:43.976603 1 server/config.go:404  system total memory: 12 GiB
+I201127 09:35:43.976646 1 server/config.go:406  server configuration:
+max offset             500000000
+cache size             128 MiB
+SQL memory pool size   3.0 GiB
+scan interval          10m0s
+scan min idle time     10ms
+scan max idle time     1s
+event log enabled      true
+I201127 09:35:43.976679 1 cli/start.go:1129  process identity: uid 501 euid 501 gid 20 egid 20
+I201127 09:35:43.977488 1 cli/start.go:697  starting cockroach node
+I201127 09:35:43.986190 41 storage/rocksdb.go:606  opening rocksdb instance at "/Users/ashe/go/src/social/cockroach-data/cockroach-temp924963579"
+I201127 09:35:44.044879 41 server/server.go:1066  [n?] monitoring forward clock jumps based on server.clock.forward_jump_check_enabled
+W201127 09:35:44.046184 41 server/config_unix.go:112  soft open file descriptor limit 10240 is under the recommended limit 15000; this may decrease performance
+please see https://www.cockroachlabs.com/docs/v20.1/recommended-production-settings.html for more details
+I201127 09:35:44.046272 41 storage/rocksdb.go:606  opening rocksdb instance at "/Users/ashe/go/src/social/cockroach-data"
+I201127 09:35:44.053068 41 server/config.go:578  [n?] 1 storage engine initialized
+I201127 09:35:44.053078 41 server/config.go:581  [n?] RocksDB cache size: 128 MiB
+I201127 09:35:44.053085 41 server/config.go:581  [n?] store 0: RocksDB, max size 0 B, max open file limit 9984
+I201127 09:35:44.059078 41 server/server.go:1514  [n?] no stores bootstrapped and --join flag specified, awaiting init command or join with an already initialized node.
+I201127 09:35:44.059102 41 server/server.go:1524  [n?] **** add additional nodes by specifying --join=127.0.0.1:26257
+I201127 09:35:44.071066 41 server/node.go:324  [n?] **** cluster 14d633ce-38e2-4cf3-86f2-8c4e8fa135a7 has been created
+I201127 09:35:44.072327 41 gossip/gossip.go:395  [n1] NodeDescriptor set to node_id:1 address:<network_field:"tcp" address_field:"127.0.0.1:26257" > attrs:<> locality:<> ServerVersion:<major_val:20 minor_val:1 patch:0 unstable:0 > build_tag:"v20.1.4" started_at:1606469744072143000 cluster_name:"" sql_address:<network_field:"tcp" address_field:"127.0.0.1:26257" > 
+I201127 09:35:44.083955 41 server/node.go:428  [n1] initialized store [n1,s1]: disk (capacity=232 GiB, available=88 GiB, used=168 KiB, logicalBytes=16 KiB), ranges=32, leases=0, queries=0.00, writes=0.00, bytesPerReplica={p10=0.00 p25=0.00 p50=0.00 p75=0.00 p90=166.00 pMax=13304.00}, writesPerReplica={p10=0.00 p25=0.00 p50=0.00 p75=0.00 p90=0.00 pMax=0.00}
+I201127 09:35:44.084054 41 kv/kvserver/stores.go:247  [n1] read 0 node addresses from persistent storage
+I201127 09:35:44.084173 41 server/node.go:649  [n1] connecting to gossip network to verify cluster ID...
+I201127 09:35:44.086650 41 server/node.go:669  [n1] node connected via gossip and verified as part of cluster "14d633ce-38e2-4cf3-86f2-8c4e8fa135a7"
+I201127 09:35:44.087026 41 server/node.go:512  [n1] node=1: started with [<no-attributes>=/Users/ashe/go/src/social/cockroach-data] engine(s) and attributes []
+W201127 09:35:44.087131 130 kv/kvserver/store.go:1631  [n1,s1,r6/1:/Table/{SystemCon…-11}] could not gossip system config: [NotLeaseHolderError] r6: replica (n1,s1):1 not lease holder; lease holder unknown
+I201127 09:35:44.087233 41 server/server.go:1630  [n1] starting http server at 127.0.0.1:8080 (use: 127.0.0.1:8080)
+I201127 09:35:44.087245 41 server/server.go:1637  [n1] starting grpc/postgres server at 127.0.0.1:26257
+I201127 09:35:44.087254 41 server/server.go:1638  [n1] advertising CockroachDB node at 127.0.0.1:26257
+I201127 09:35:44.088050 160 sql/temporary_schema.go:452  [n1] skipping temporary object cleanup run as it is not the leaseholder
+I201127 09:35:44.088064 160 sql/temporary_schema.go:453  [n1] completed temporary object cleanup job
+I201127 09:35:44.088076 160 sql/temporary_schema.go:575  [n1] temporary object cleaner next scheduled to run at 2020-11-27 10:05:44.087885 +0000 UTC
+I201127 09:35:44.180026 294 sql/event_log.go:132  [n1,intExec=optInToDiagnosticsStatReporting] Event: "set_cluster_setting", target: 0, info: {SettingName:diagnostics.reporting.enabled Value:true User:root}
+I201127 09:35:44.194895 177 sql/event_log.go:132  [n1,intExec=set-setting] Event: "set_cluster_setting", target: 0, info: {SettingName:version Value:20.1 User:root}
+I201127 09:35:44.208853 533 sql/event_log.go:132  [n1,intExec=initializeClusterSecret] Event: "set_cluster_setting", target: 0, info: {SettingName:cluster.secret Value:419ea130-6c89-4ae4-877b-9e3e3e0d904a User:root}
+I201127 09:35:44.213888 667 sql/event_log.go:132  [n1,intExec=create-default-db] Event: "create_database", target: 50, info: {DatabaseName:defaultdb Statement:CREATE DATABASE IF NOT EXISTS defaultdb User:root}
+I201127 09:35:44.217107 738 sql/event_log.go:132  [n1,intExec=create-default-db] Event: "create_database", target: 51, info: {DatabaseName:postgres Statement:CREATE DATABASE IF NOT EXISTS postgres User:root}
+I201127 09:35:44.233715 41 server/server.go:1798  [n1] done ensuring all necessary migrations have run
+I201127 09:35:44.233736 41 server/server.go:2040  [n1] serving sql connections
+I201127 09:35:44.233821 41 cli/start.go:857  [config] clusterID: 14d633ce-38e2-4cf3-86f2-8c4e8fa135a7
+I201127 09:35:44.233854 41 cli/start.go:866  node startup completed:
+CockroachDB node starting at 2020-11-27 09:35:44.233764 +0000 UTC (took 0.3s)
+build:               CCL v20.1.4 @ 2020/07/29 22:51:52 (go1.13.9)
+webui:               http://127.0.0.1:8080
+sql:                 postgresql://root@127.0.0.1:26257?sslmode=disable
+RPC client flags:    cockroach <client cmd> --host=127.0.0.1:26257 --insecure
+logs:                /Users/ashe/go/src/social/cockroach-data/logs
+temp dir:            /Users/ashe/go/src/social/cockroach-data/cockroach-temp924963579
+external I/O path:   /Users/ashe/go/src/social/cockroach-data/extern
+store[0]:            path=/Users/ashe/go/src/social/cockroach-data
+storage engine:      rocksdb
+status:              initialized new cluster
+clusterID:           14d633ce-38e2-4cf3-86f2-8c4e8fa135a7
+nodeID:              1
+I201127 09:35:44.239674 893 server/server_update.go:55  [n1] no need to upgrade, cluster already at the newest version
+I201127 09:35:44.233999 895 sqlmigrations/migrations.go:668  [n1] starting wait for upgrade finalization before schema change job migration
+I201127 09:35:44.240026 895 sqlmigrations/migrations.go:700  [n1] starting schema change job migration
+I201127 09:35:44.239594 896 sql/event_log.go:132  [n1] Event: "node_join", target: 1, info: {Descriptor:{NodeID:1 Address:127.0.0.1:26257 Attrs: Locality: ServerVersion:20.1 BuildTag:v20.1.4 StartedAt:1606469744072143000 LocalityAddress:[] ClusterName: SQLAddress:127.0.0.1:26257} ClusterID:14d633ce-38e2-4cf3-86f2-8c4e8fa135a7 StartedAt:1606469744072143000 LastUp:1606469744072143000}
+I201127 09:35:44.251737 895 sqlmigrations/migrations.go:1124  [schema-change-job-migration] evaluating tables for creating jobs
+I201127 09:35:44.251778 895 sqlmigrations/migrations.go:719  [n1] schema change job migration completed
+I201127 09:35:45.721125 95 gossip/gossip.go:1527  [n1] node has connected to cluster via gossip
+I201127 09:35:45.721222 95 kv/kvserver/stores.go:266  [n1] wrote 0 node addresses to persistent storage
+I201127 09:35:46.363900 1 cli/start.go:919  received signal 'interrupt'
+I201127 09:35:46.365714 1 cli/start.go:1006  initiating graceful shutdown of server
+I201127 09:35:46.371492 1001 server/drain.go:173  [server drain process] drain remaining: 2
+I201127 09:35:46.372687 1001 server/drain.go:175  [server drain process] drain details: table leases: 1, liveness record: 1
+I201127 09:35:46.579164 1001 server/drain.go:173  [server drain process] drain remaining: 0
+I201127 09:35:46.581424 1001 util/stop/stopper.go:539  [server drain process] quiescing
+I201127 09:35:48.257622 898 server/updates.go:268  [n1] A new version is available: 20.2.1, details: https://www.cockroachlabs.com/docs/releases/v20.2.1.html
+E201127 09:35:49.648692 1 cli/start.go:1041  received signal 'interrupt' during shutdown, initiating hard shutdown - node may take longer to restart & clients may need to wait for leases to expire

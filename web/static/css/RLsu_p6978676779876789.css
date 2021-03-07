@@ -1,0 +1,57 @@
+.user-profile{ margin-top: 60px;}
+.pp-dd{
+    float:right;
+}
+    .tags{
+        display: inline-grid;
+    }
+    .tagi{
+        display: inline-table;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        padding: 5px;
+        border-radius:20px;
+        box-shadow: rgb(66 66 138 / 25%) 0px 6px 18px 2px, rgb(163 169 174 / 30%) 0px 1px 2px 0px;
+    }
+    .tagi:hover
+    {background:#d0d6db;}
+    .amounter{
+        color:#8198e9;
+        margin-left:30px;
+    }
+    .post-item{
+        background-color:var(--color-it-root);
+        margin-bottom:40px;
+        border-radius:10px;
+        padding:20px;
+        height: 400px;
+        width: 250px;
+        overflow: auto;
+float: left;
+margin-left: 30px;
+margin-top: 40px;
+    }
+    .avatar{
+        border-radius: 0px;
+width: 250px;
+    }
+    h1{
+        color: #8298e9;
+    }
+    .img_i7665656545{
+        border-radius:50%;
+        height:100px;
+    }
+    .likes-count{
+        color:white;
+    }
+    textarea{
+        background-color: rgb(255, 255, 255);
+border: none;
+color: #424242;
+padding: 0 1rem;
+height: 2rem;
+border-radius: .25rem;
+font-size: 1rem;
+    }
+   

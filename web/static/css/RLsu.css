@@ -1,0 +1,38 @@
+#search-results-outlet{margin-top: 30px;}  #search-form{ margin-top: 40px;}
+#search-form input{
+    background-color: #343438;
+    width: 60ch;
+    color:grey;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 6px 18px 2px, rgb(0 0 0 / 30%) 0px 1px 2px 0px;
+}
+.user-profile a {margin-left: 20px;}
+
+.user-profile button {background-color: #343438;  margin-left: 40px;   border-radius: 50px;
+
+}
+.user-profile_srh_6876876868678:hover{
+    border-right: 2px solid rgb(130, 152, 233);
+    width:55vh;
+
+}
+.avatar_srh{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 25%) 0px 6px 18px 2px, rgb(0 0 0 / 30%) 0px 1px 2px 0px;
+}
+.avatar_srh_57586586586587{ width:20px; border-radius: 50%;padding:5px;}
+.user-profile {
+    display: flex;
+    width: 50vh;
+    margin: 20px 0;
+    box-shadow: rgb(0 0 0 / 25%) 0px 6px 18px 2px, rgb(0 0 0 / 30%) 0px 1px 2px 0px;
+    border-radius: 19px;
+    padding: 11px;
+}
+
+.user-profile span{color: #b6bfc9;
+ }
+.label{color:silver;}
